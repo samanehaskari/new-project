@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>filters</title>
+  </head>
+  <body>
+    <div class="relative bg-shadow h-screen w-screen">
+      <div
+        class="absolute bottom-0 h-[449px] w-full bg-white rounded-t-[18px] opacity-100"
+      >
+        <div class="flex flex-col gap-7 p-7">
+          <div class="flex flex-row-reverse justify-between">
+            <h1 class="text-lg font-semibold text-black">فیلتر ها</h1>
+            <img src="img/icons/times-square.svg" alt="" />
+          </div>
+          <form action="" class="flex flex-col gap-5">
+            <!-- metrage filter -->
+            <div>
+              <label
+                class="text-[13px] w-full inline-block text-right font-bold"
+                >متراژ (متر)</label
+              >
+              <div
+                class="grid grid-cols-2 w-12/12 h-[51px] bg-[#fafafa] rounded-lg border-[1.5px] border-[##EEF0F3] mt-2 text-right bg-none outline-none"
+              >
+                <div class="flex items-center rounded-lg w-full px-5 space-x-3">
+                  <img
+                    class="h-2 w-2"
+                    src="img/icons/down-arrow-bold.svg"
+                    alt=""
+                  />
+
+                  <input
+                    class="outline-none text-right font-semibold w-full grow bg-[#fafafa]"
+                    placeholder="تا"
+                    type="nubmer"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div
+                  class="flex items-center w-full border-l border-l-[#EEF0F3] px-5 space-x-3"
+                >
+                  <img
+                    class="h-2 w-2"
+                    src="img/icons/down-arrow-bold.svg"
+                    alt=""
+                  />
+
+                  <input
+                    class="outline-none text-right font-semibold w-full grow bg-[#fafafa]"
+                    placeholder="از"
+                    type="number"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- price filter -->
+            <div>
+              <label
+                class="text-[13px] w-full inline-block text-right font-bold"
+                >قیمت
+              </label>
+              <div
+                class="flex justify-center items-center w-12/12 h-[51px] bg-[#fafafa] rounded-lg border-[1.5px] border-[##EEF0F3] mt-2 text-right bg-none outline-none"
+              >
+                <div
+                  class="flex items-center w-full border-l border-l-[#EEF0F3] px-5 space-x-3"
+                >
+                  <img
+                    class="h-2 w-2"
+                    src="img/icons/down-arrow-bold.svg"
+                    alt=""
+                  />
+
+                  <select
+                    class="block appearance-none outline-none text-right text-[#9E9E9E] font-semibold w-full grow bg-[#fafafa]"
+                    name=""
+                    id=""
+                  >
+                    <option value="">انتخاب نوع ارز</option>
+                    <option value="">دینار قطر</option>
+                    <option value="">ریال عمان</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 w-12/12 h-[51px] bg-[#fafafa] rounded-lg border-[1.5px] border-[##EEF0F3] mt-2 text-right bg-none outline-none"
+            >
+              <div class="flex items-center rounded-lg w-full px-5 space-x-3">
+                <img
+                  class="h-2 w-2"
+                  src="img/icons/down-arrow-bold.svg"
+                  alt=""
+                />
+
+                <input
+                  class="outline-none text-right font-semibold w-full grow bg-[#fafafa]"
+                  placeholder="تا"
+                  type="nubmer"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div
+                class="flex items-center w-full border-l border-l-[#EEF0F3] px-5 space-x-3"
+              >
+                <img
+                  class="h-2 w-2"
+                  src="img/icons/down-arrow-bold.svg"
+                  alt=""
+                />
+
+                <input
+                  class="outline-none text-right font-semibold w-full grow bg-[#fafafa]"
+                  placeholder="از"
+                  type="number"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+            <button
+              class="text-white font-bold text-lg bg-primary rounded-lg py-4 w-full shadow-filter-button"
+              type="submit"
+            >
+              اعمال فیلتر
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

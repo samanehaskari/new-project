@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>add post</title>
+  </head>
+  <body>
+    <header
+      class="bg-gray-light border-1 border-b border-header-border h-auto py-4"
+    >
+      <!-- header container -->
+      <div class="w-[1307px] mx-auto">
+        <!-- header nav -->
+        <nav class="flex flex-row items-center justify-between h-14">
+          <!-- left side nav -->
+          <div class="flex flex-row gap-8">
+            <button
+              class="bg-primary rounded-lg font-sans text-base font-semibold text-white py-4 px-5"
+            >
+              <a href="#"> ثبت آگهی </a>
+            </button>
+            <!-- bookmarks -->
+            <a
+              href="#"
+              class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
+            >
+              <p>ذخیره شده ها</p>
+              <img src="img/header/bookmark.svg" alt="" />
+            </a>
+            <!-- profile -->
+            <a
+              href="#"
+              class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
+            >
+              <p>پروفایل من</p>
+              <img src="img/header/user-Regular.svg" alt="" />
+            </a>
+          </div>
+          <!-- right side nav -->
+          <div class="flex flex-row items-center gap-8">
+            <!-- search bar -->
+            <div
+              class="flex items-center bg-white rounded-lg w-[382px] h-[56px] border border-gray-medium px-5 space-x-3"
+            >
+              <img
+                class="cursor-pointer"
+                src="img/header/sliders-h.svg"
+                alt=""
+              />
+              <form action="" class="grow">
+                <input
+                  class="outline-none text-right font-semibold w-full"
+                  placeholder="جستجو"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </form>
+              <img class="cursor-pointer" src="img/header/search.svg" alt="" />
+            </div>
+            <!-- locations  -->
+            <div
+              class="flex items-center bg-white rounded-lg w-[176px] h-[56px] border border-gray-medium px-5 space-x-3"
+            >
+              <img
+                src="img/header/chevron-down.svg"
+                class="cursor-pointer"
+                alt=""
+              />
+              <select
+                class="block appearance-none w-full text-primary font-sans font-semibold text-right focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state"
+              >
+                <option>شیراز</option>
+              </select>
+
+              <img src="img/header/map-marker.svg" alt="" />
+            </div>
+            <!-- line -->
+            <div class="border border-l border-gray-medium h-[40px]"></div>
+            <!-- logo -->
+            <a href="#"
+              ><img
+                class="cursor-pointer"
+                src="img/header/carbon_logo-xing.svg"
+                alt=""
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- submit a post section -->
+    <section class="flex justify-center">
+      <div class="flex flex-col gap-5 mt-16">
+        <div>
+          <h1 class="text-right text-xl">ثبت آگهی</h1>
+          <p class="text-gray-text text-right mt-1">انتخاب دسته بندی</p>
+        </div>
+
+        <!--post categories -->
+        <div class="grid grid-cols-5 gap-4">
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Airplane around Earth.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">تور</p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Cosmetics.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">
+                پزشکی و زیبایی
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Animal care.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">حیوانات</p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Production.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">
+                صنعتی و شرکتی
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Video game.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">سرگرمی</p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/image 17.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">وسایل نقلیه</p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Kitchen.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">
+                خانه و آشپزخانه
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Smartphone Call.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">
+                موبایل و تبلت
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Apartment.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">املاک</p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
+              ><img src="img/icons/Human resources.svg" alt="" />
+              <p class="text-gray-text font-medium text-[10px]">
+                استخدام و کاریابی
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

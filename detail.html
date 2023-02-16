@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Post Details</title>
+  </head>
+  <body>
+    <header
+      class="bg-gray-light border-1 border-b border-header-border h-auto py-4"
+    >
+      <!-- header container -->
+      <div class="w-[1307px] mx-auto">
+        <!-- header nav -->
+        <nav class="flex flex-row items-center justify-between h-14">
+          <!-- left side nav -->
+          <div class="flex flex-row gap-8">
+            <button
+              class="bg-primary rounded-lg font-sans text-base font-semibold text-white py-4 px-5"
+            >
+              <a href="#"> ثبت آگهی </a>
+            </button>
+            <!-- bookmarks -->
+            <a
+              href="#"
+              class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
+            >
+              <p>ذخیره شده ها</p>
+              <img src="img/header/bookmark.svg" alt="" />
+            </a>
+            <!-- profile -->
+            <a
+              href="#"
+              class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
+            >
+              <p>پروفایل من</p>
+              <img src="img/header/user-Regular.svg" alt="" />
+            </a>
+          </div>
+          <!-- right side nav -->
+          <div class="flex flex-row items-center gap-8">
+            <!-- search bar -->
+            <div
+              class="flex items-center bg-white rounded-lg w-[382px] h-[56px] border border-gray-medium px-5 space-x-3"
+            >
+              <img
+                class="cursor-pointer"
+                src="img/header/sliders-h.svg"
+                alt=""
+              />
+              <form action="" class="grow">
+                <input
+                  class="outline-none text-right font-semibold w-full"
+                  placeholder="جستجو"
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </form>
+              <img class="cursor-pointer" src="img/header/search.svg" alt="" />
+            </div>
+            <!-- locations  -->
+            <div
+              class="flex items-center bg-white rounded-lg w-[176px] h-[56px] border border-gray-medium px-5 space-x-3"
+            >
+              <img
+                src="img/header/chevron-down.svg"
+                class="cursor-pointer"
+                alt=""
+              />
+              <select
+                class="block appearance-none w-full text-primary font-sans font-semibold text-right focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-state"
+              >
+                <option>شیراز</option>
+              </select>
+
+              <img src="img/header/map-marker.svg" alt="" />
+            </div>
+            <!-- line -->
+            <div class="border border-l border-gray-medium h-[40px]"></div>
+            <!-- logo -->
+            <a href="#"
+              ><img
+                class="cursor-pointer"
+                src="img/header/carbon_logo-xing.svg"
+                alt=""
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="flex flex-col w-[1074px] mx-auto my-20">
+        <!-- map category -->
+        <div class="w-full flex flex-row-reverse gap-2 font-bold">
+          <a href="#">/ خانه</a>
+          <a href="#">/ املاک</a>
+          <a href="#">/ مسکونی</a>
+          <a href="#">/ آپارتمان</a>
+          <a class="text-primary" href="#">فروش آپارتمان</a>
+        </div>
+        <!-- post details -->
+        <div class="grid grid-cols-2 gap-14 text-right mt-4">
+          <div class="">
+            <h1 class="text-[34px] font-semibold">عنوان آگهی</h1>
+            <p class="text-[13px]">دقایقی پیش در شیراز | خرید ملک مسکونی</p>
+            <div
+              class="grid grid-cols-3 bg-[#EFEFEF] w-full px-9 py-3 mt-5 rounded-lg"
+            >
+              <div class="flex flex-col gap-2 items-center justify-center">
+                <p class="font-serif text-sm">200,000</p>
+                <div
+                  class="flex flex-row-reverse gap-2 items-center justify-center"
+                >
+                  <p class="text-sm font-semibold">قیمت</p>
+                  <p class="text-[10px]">(دینار)</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-2 items-center justify-center border-l-2 border-l-white"
+              >
+                <p class="font-serif text-sm">2001</p>
+                <div
+                  class="flex flex-row-reverse gap-2 items-center justify-center"
+                >
+                  <p class="text-sm font-semibold">متراژ</p>
+                  <p class="text-[10px]">(متر مربع)</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-2 items-center justify-center border-l-2 border-l-white"
+              >
+                <p class="font-serif text-sm">2001</p>
+                <div
+                  class="flex flex-row-reverse gap-2 items-center justify-center"
+                >
+                  <p class="text-sm font-semibold">سال ساخت</p>
+                </div>
+              </div>
+            </div>
+            <!-- description -->
+            <p class="my-8 text-sm leading-8">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کا]j لورم ایپسوم متن
+              ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+              گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+              که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+              متنوع با هدف بهبود ابزارهای کار
+            </p>
+            <div class="border-b border-gray-200"></div>
+            <div class="flex items-center flex-row-reverse mt-5 gap-2">
+              <img
+                src="img/icons/ic_sharp-report-gmailerrorred.svg"
+                alt=""
+                class="rounded-lg"
+              />
+              <a class="text-lg font-bold" href="#">گزارش آگهی</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <!-- main photo -->
+            <div class="relative">
+              <img
+                class="w-full relative"
+                src="img/post pics/pic1.png"
+                alt=""
+              />
+              <div
+                class="transform -translate-x-2/4 flex gap-1 absolute bottom-5 left-2/4 trasla"
+              >
+                <div class="rounded-lg w-2 h-1 bg-white cursor-pointer"></div>
+                <div class="rounded-lg w-2 h-1 bg-white cursor-pointer"></div>
+                <div class="rounded-lg w-2 h-1 bg-white cursor-pointer"></div>
+                <div class="rounded-lg w-6 h-1 bg-primary cursor-pointer"></div>
+              </div>
+            </div>
+            <!-- tumbnails -->
+            <div class="flex flex-row-reverse gap-2">
+              <img
+                class="rounded-lg h-[64px] w-[64px] border-2 border-[##E3E3E3] cursor-pointer"
+                src="img/post pics/pic1.png"
+                alt=""
+              />
+              <img
+                class="rounded-lg h-[64px] w-[64px] border-2 border-[##E3E3E3] cursor-pointer opacity-60"
+                src="img/post pics/tumbnail2.png"
+                alt=""
+              />
+              <img
+                class="rounded-lg h-[64px] w-[64px] border-2 border-[##E3E3E3] cursor-pointer opacity-60"
+                src="img/post pics/tumbnail3.png"
+                alt=""
+              />
+              <img
+                class="rounded-lg h-[64px] w-[64px] border-2 border-[##E3E3E3] cursor-pointer opacity-60"
+                src="img/post pics/tumbnail4.png"
+                alt=""
+              />
+              <img
+                class="rounded-lg h-[64px] w-[64px] border-2 border-[##E3E3E3] cursor-pointer opacity-60"
+                src="img/post pics/tumbnail5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- post pics -->
+      </div>
+    </section>
+  </body>
+</html>

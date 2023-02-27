@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./pages/**/*.{html,js}"],
   theme: {
     fontFamily: {
       sans: ["Vazirmatn", "sans-serif"],
@@ -10,7 +10,6 @@ module.exports = {
     extend: {
       colors: {
         primary: "#C60000",
-        white: "#fff",
         "gray-light": "#FAFAFA",
         "gray-medium": "#EFEFEF",
         "header-border": "#E2E2E2",

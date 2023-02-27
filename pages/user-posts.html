@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Home</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <title>user posts</title>
   </head>
-  <body>
+  <body class="h-screen">
     <header
       class="bg-gray-light border-1 border-b border-header-border h-auto py-4"
     >
@@ -28,7 +28,7 @@
               class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
             >
               <p>ذخیره شده ها</p>
-              <img src="img/header/bookmark.svg" alt="" />
+              <img src="../src/img/header/bookmark.svg" alt="" />
             </a>
             <!-- profile -->
             <a
@@ -36,7 +36,7 @@
               class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
             >
               <p>پروفایل من</p>
-              <img src="img/header/user-Regular.svg" alt="" />
+              <img src="../src/img/header/user-Regular.svg" alt="" />
             </a>
           </div>
           <!-- right side nav -->
@@ -47,7 +47,7 @@
             >
               <img
                 class="cursor-pointer"
-                src="img/header/sliders-h.svg"
+                src="../src/img/header/sliders-h.svg"
                 alt=""
               />
               <form action="" class="grow">
@@ -59,14 +59,18 @@
                   id=""
                 />
               </form>
-              <img class="cursor-pointer" src="img/header/search.svg" alt="" />
+              <img
+                class="cursor-pointer"
+                src="../src/img/header/search.svg"
+                alt=""
+              />
             </div>
             <!-- locations  -->
             <div
               class="flex items-center bg-white rounded-lg w-[176px] h-[56px] border border-gray-medium px-5 space-x-3"
             >
               <img
-                src="img/header/chevron-down.svg"
+                src="../src/img/header/chevron-down.svg"
                 class="cursor-pointer"
                 alt=""
               />
@@ -77,7 +81,7 @@
                 <option>شیراز</option>
               </select>
 
-              <img src="img/header/map-marker.svg" alt="" />
+              <img src="../src/img/header/map-marker.svg" alt="" />
             </div>
             <!-- line -->
             <div class="border border-l border-gray-medium h-[40px]"></div>
@@ -85,105 +89,17 @@
             <a href="#"
               ><img
                 class="cursor-pointer"
-                src="img/header/carbon_logo-xing.svg"
+                src="../src/img/header/carbon_logo-xing.svg"
                 alt=""
             /></a>
           </div>
         </nav>
       </div>
     </header>
-    <div class="w-[1307px] my-10 mx-auto flex flex-col justify-center gap-8">
-      <div
-        class="flex justify-center w-full gap-8 py-5 bg-gray-light rounded-lg border border-header-border"
-      >
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/image 17.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">وسایل نقلیه</p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Kitchen.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">
-              خانه و آشپزخانه
-            </p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Smartphone Call.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">موبایل و تبلت</p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Apartment.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">املاک</p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Human resources.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">
-              استخدام و کاریابی
-            </p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Airplane around Earth.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">تور</p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Cosmetics.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">پزشکی و زیبایی</p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Animal care.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">حیوانات</p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Production.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">صنعتی و شرکتی</p>
-          </a>
-        </div>
-        <div>
-          <a
-            href="#"
-            class="flex items-center justify-center flex-col space-y-2 bg-white h-[84px] w-[86px] rounded-lg border border-border-1 shadow-category"
-            ><img src="img/icons/Video game.svg" alt="" />
-            <p class="text-gray-text font-medium text-[10px]">سرگرمی</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- all posts -->
-      <div class="flex justify-end grow">
+    <!-- new section -->
+    <div class="flex justify-between my-9">
+      <!-- main -->
+      <main class="flex justify-end grow">
         <div
           class="flex flex-col gap-8 bg-gray-light rounded-lg border border-header-border"
         >
@@ -215,21 +131,19 @@
               </div>
               <div class="flex gap-2 items-center">
                 <p class="text-sm font-medium">:مرتب سازی</p>
-                <img src="img/icons/sort-descending-Bold.svg" alt="" />
+                <img src="../src/img/icons/sort-descending-Bold.svg" alt="" />
               </div>
             </div>
           </div>
           <!-- total posts -->
-          <div
-            class="grid grid-cols-6 gap-x-5 gap-y-10 px-8 pb-8 text-right w-full"
-          >
+          <div class="grid grid-cols-5 gap-x-5 gap-y-10 px-8 pb-8 text-right">
             <!-- postcard -->
             <div
               class="flex flex-col cursor-pointer gap-3 bg-white w-[190px] rounded-lg border border-header-border"
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post1.png" alt="" />
+                <img src="../src/img/post pics/post1.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -247,7 +161,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post2.png" alt="" />
+                <img src="../src/img/post pics/post2.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -265,7 +179,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post3.png" alt="" />
+                <img src="../src/img/post pics/post3.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -283,7 +197,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -301,7 +215,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -319,7 +233,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post1.png" alt="" />
+                <img src="../src/img/post pics/post1.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -337,7 +251,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post2.png" alt="" />
+                <img src="../src/img/post pics/post2.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -355,7 +269,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post3.png" alt="" />
+                <img src="../src/img/post pics/post3.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -373,7 +287,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -391,7 +305,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -409,7 +323,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post1.png" alt="" />
+                <img src="../src/img/post pics/post1.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -427,7 +341,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post2.png" alt="" />
+                <img src="../src/img/post pics/post2.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -445,7 +359,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post3.png" alt="" />
+                <img src="../src/img/post pics/post3.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -463,7 +377,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -481,7 +395,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -499,7 +413,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post1.png" alt="" />
+                <img src="../src/img/post pics/post1.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -517,7 +431,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post2.png" alt="" />
+                <img src="../src/img/post pics/post2.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -535,7 +449,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post3.png" alt="" />
+                <img src="../src/img/post pics/post3.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -553,7 +467,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -571,7 +485,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -589,7 +503,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post1.png" alt="" />
+                <img src="../src/img/post pics/post1.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -607,7 +521,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post2.png" alt="" />
+                <img src="../src/img/post pics/post2.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -625,7 +539,7 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post3.png" alt="" />
+                <img src="../src/img/post pics/post3.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -643,7 +557,25 @@
             >
               <!-- post image -->
               <div class="flex justify-center h-26 -mt-5 rounded-lg">
-                <img src="img/post pics/post4.png" alt="" />
+                <img src="../src/img/post pics/post4.png" alt="" />
+              </div>
+              <!-- post details -->
+              <div class="flex flex-col px-4 pb-4">
+                <p class="font-sans font-semibold text-sm">عنوان اگهی</p>
+
+                <div class="flex gap-1 items-center mt-3">
+                  <p class="text-[10px] grow">تومان</p>
+                  <span class="text-primary font-serif text-sm">800,000</span>
+                </div>
+                <p class="text-gray-dark text-[10px]">لحظاتی پیش در شیراز</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col cursor-pointer gap-3 bg-white w-[190px] rounded-lg border border-header-border"
+            >
+              <!-- post image -->
+              <div class="flex justify-center h-26 -mt-5 rounded-lg">
+                <img src="../src/img/post pics/post4.png" alt="" />
               </div>
               <!-- post details -->
               <div class="flex flex-col px-4 pb-4">
@@ -658,7 +590,51 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
+      <!-- aside -->
+      <aside class="w-[21%]">
+        <!-- store details -->
+        <div
+          class="right-0 flex flex-col p-5 text-right w-[290px] ml-auto gap-3 bg-gray-light rounded-l-lg border-t border-l border-b border-header-border"
+        >
+          <!-- store pro -->
+          <img
+            class="cursor-pointer"
+            src="../src/img/post pics/main post photo.png"
+            alt=""
+          />
+          <!-- store name -->
+          <h1 class="cursor-pointer" class="font-sans font-semibold text-lg">
+            نام فروشگاه
+          </h1>
+          <!-- address -->
+          <address class="font-sans font-light text-xs text-[#313131]">
+            شیراز معالی آباد ، پاساژ افتاب ، طبقه همکف ، پلاک 2
+          </address>
+          <!-- phone number -->
+          <div class="flex font-sans font-normal gap-3 text-xs text-[#313131]">
+            <a class="grow" href="tel:0778 588 5885">0778 588 5885</a>
+            <p>:شماره تماس</p>
+          </div>
+          <!-- map location -->
+          <a
+            href="#"
+            class="flex items-center bg-white rounded-lg h-10 border border-gray-medium px-5 space-x-3"
+          >
+            <p class="grow text-sm font-bold text-primary">
+              مشاهده آدرس روی نقشه
+            </p>
+            <img src="../src/img/icons/map-marker.svg" alt="" />
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center justify-center bg-white rounded-lg p-4 border border-gray-medium px-5 space-x-3"
+          >
+            <img class="grow" src="../src/img/QR code.png" alt="" />
+          </a>
+        </div>
+      </aside>
     </div>
   </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script> -->
+    <title>Remove ad modal</title>
+  </head>
+  <body class="font-sans">
+    <div class="relative bg-shadow h-screen w-screen">
+      <div
+        class="container absolute bottom-0 h-auto w-full p-5 bg-white rounded-t-[18px] opacity-100 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-[429px] md:rounded-[18px]"
+      >
+        <div class="flex flex-col gap-4 text-right w-full mt-2.5">
+          <div class="flex flex-row-reverse justify-between items-center">
+            <h1 class="tedt-lg font-semibold">حذف آگهی</h1>
+            <img
+              src="../src/img/icons/close squre black.svg"
+              alt=""
+              class="cursor-pointer"
+            />
+          </div>
+          <p class="w-full text-right">دلایل حذف آگهی را مشخص کنید</p>
+        </div>
+        <form action="" class="flex flex-col gap-4 mt-6">
+          <div class="flex flex-row-reverse gap-2 items-center">
+            <input
+              id="sales-in-application"
+              type="checkbox"
+              class="w-4 h-4 accent-red-700 bg-white rounded focus:ring-white border-red-700"
+            />
+            <label for="sales-in-application" class="font-semibold text-xs"
+              >در اپلیکیشن فروش رفت</label
+            >
+          </div>
+          <div class="flex flex-row-reverse gap-2 items-center">
+            <input
+              id="other-ways"
+              type="checkbox"
+              class="w-4 h-4 accent-red-700 bg-white rounded focus:ring-white border-red-700"
+            />
+            <label for="other-ways" class="font-semibold text-xs"
+              >از راه دیگری فروش رفت</label
+            >
+          </div>
+          <div class="flex flex-row-reverse gap-2 items-center">
+            <input
+              id="customer-not-found"
+              type="checkbox"
+              class="w-4 h-4 accent-red-700 bg-white rounded focus:ring-white border-red-700"
+            />
+            <label for="customer-not-found" class="font-semibold text-xs"
+              >مشتری پیدا نشد</label
+            >
+          </div>
+          <div class="flex flex-row-reverse gap-2 items-center">
+            <input
+              id="stopped-selling"
+              type="checkbox"
+              class="w-4 h-4 accent-red-700 bg-white rounded focus:ring-white border-red-700"
+            />
+            <label for="stopped-selling" class="font-semibold text-xs"
+              >از فروش منصرف شدم</label
+            >
+          </div>
+          <div class="flex flex-row-reverse gap-2 items-center">
+            <input
+              id="other"
+              type="checkbox"
+              class="w-4 h-4 accent-red-700 bg-white rounded focus:ring-white border-red-700"
+              checked
+            />
+            <label for="other" class="font-semibold text-xs">سایر</label>
+          </div>
+          <!-- <div
+            class="border-2 bg-white border-[#D8D8D8] h-[84px] w-full rounded-lg text-right p-2 mt-4"
+          >
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="دلایل حذف آگهی را بنویسید"
+              class="h-full w-full border-none focus:outline-none text-right resize-none"
+            ></textarea>
+          </div> -->
+        </form>
+        <div
+          class="flex flex-row-reverse w-full bottom-0 left-0 mt-auto gap-4 pt-5 mx-auto"
+        >
+          <button
+            class="bg-[#C60000] rounded-lg text-white text-lg font font-bold h-[52px] shadow-filter-button w-1/2"
+            type="submit"
+          >
+            حذف
+          </button>
+          <button
+            class="bg-red-200 rounded-lg text-primary text-lg font font-bold h-[52px] w-1/2"
+          >
+            <a href="#"> انصراف </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

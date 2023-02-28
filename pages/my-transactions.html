@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <title>My transactions</title>
+  </head>
+  <body>
+    <body class="bg-[#FAFAFA] md:bg-white">
+      <!-- desktop header -->
+      <header
+        class="bg-gray-light border-1 border-b border-header-border h-auto py-4 hidden md:block"
+      >
+        <!-- header container -->
+        <div class="w-[1307px] mx-auto">
+          <!-- header nav -->
+          <nav class="flex flex-row items-center justify-between h-14">
+            <!-- left side nav -->
+            <div class="flex flex-row gap-8">
+              <button
+                class="bg-primary rounded-lg font-sans text-base font-semibold text-white py-4 px-5"
+              >
+                <a href="#"> ثبت آگهی </a>
+              </button>
+              <!-- bookmarks -->
+              <a
+                href="#"
+                class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
+              >
+                <p>ذخیره شده ها</p>
+                <img src="../src/img/header/bookmark.svg" alt="" />
+              </a>
+              <!-- profile -->
+              <a
+                href="#"
+                class="flex justify-center items-center font-sans font-normal text-sm space-x-2.5"
+              >
+                <p>پروفایل من</p>
+                <img src="../src/img/header/user-Regular.svg" alt="" />
+              </a>
+            </div>
+            <!-- right side nav -->
+            <div class="flex flex-row items-center gap-8">
+              <!-- search bar -->
+              <div
+                class="flex items-center bg-white rounded-lg w-[382px] h-[56px] border border-gray-medium px-5 space-x-3"
+              >
+                <img
+                  class="cursor-pointer"
+                  src="../src/img/header/sliders-h.svg"
+                  alt=""
+                />
+                <form action="" class="grow">
+                  <input
+                    class="outline-none text-right font-semibold w-full"
+                    placeholder="جستجو"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </form>
+                <img
+                  class="cursor-pointer"
+                  src="../src/img/header/search.svg"
+                  alt=""
+                />
+              </div>
+              <!-- locations  -->
+              <div
+                class="flex items-center bg-white rounded-lg w-[176px] h-[56px] border border-gray-medium px-5 space-x-3"
+              >
+                <img
+                  src="../src/img/header/chevron-down.svg"
+                  class="cursor-pointer"
+                  alt=""
+                />
+                <select
+                  class="block appearance-none w-full text-primary font-sans font-semibold text-right focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-state"
+                >
+                  <option>شیراز</option>
+                </select>
+
+                <img src="../src/img/header/map-marker.svg" alt="" />
+              </div>
+              <!-- line -->
+              <div class="border border-l border-gray-medium h-[40px]"></div>
+              <!-- logo -->
+              <a href="#"
+                ><img
+                  class="cursor-pointer"
+                  src="../src/img/header/carbon_logo-xing.svg"
+                  alt=""
+              /></a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- top nav mobile -->
+      <div
+        class="fixed top-0 left-0 w-full bg-[#FAFAFA] flex gap-4 px-[24px] py-[20px] z-20 md:hidden"
+      >
+        <img
+          src="../src/img/icons/black left arrow.svg"
+          alt=""
+          class="h-[30px] w-[30px] cursor-pointer"
+        />
+        <p class="font-semibold text-lg">تراکنش های من</p>
+      </div>
+      <!-- main section -->
+      <div class="grid grid-cols-1 md:grid-cols-10 justify-end h-[787px]">
+        <!-- transactions part -->
+        <div
+          class="col-span-8 md:pt-[70px] md:pb-[90px] mt-[70px] md:mt-0 md:mb-0 mb-[20px] md:px-[70px] px-[21px] py-2.5 w-full h-full md:flex md:flex-col md:text-right md:gap-[25px]"
+        >
+          <h1 class="font-semibold text-xl hidden md:block">تراکنش های من</h1>
+          <div
+            class="h-auto md:h-[577px] w-full overflow-y-scroll no-scrollbar flex flex-col gap-4"
+          >
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- transactions card -->
+            <div
+              class="bg-white w-full h-[59px] rounded-[9px] border border-[#ECECEC] px-[24px] py-[17px] md:bg-[#FAFAFA]"
+            >
+              <div class="flex justify-between items-center">
+                <!-- price -->
+                <div class="flex flex-row-reverse gap-2 items-center">
+                  <div class="font-serif text-[#2D3748] text-[19px]">1200</div>
+                  <div class="text-[#EE2C2C] text-[11px]">دینار</div>
+                </div>
+                <!-- title and date -->
+                <div class="flex flex-row-reverse gap-1">
+                  <div class="font-semibold text-[13px]">تمدید آگهی</div>
+                  <div class="text-[#565656] font-semibold text-[13px]">-</div>
+                  <div
+                    class="text-[#565656] font-semibold text-[13px] flex flex-row-reverse gap-1"
+                  >
+                    <div>22</div>
+                    <div>شهریور</div>
+                    <div>1401</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- profile menu -->
+        <div class="h-full hidden md:block border-l right-0 col-span-2">
+          <div
+            class="flex flex-col h-full w-full pt-[42px] pb-[51px] items-center"
+          >
+            <!-- profile pic and profile name section -->
+            <div class="flex items-center justify-center">
+              <div class="flex flex-col gap-4 text-center">
+                <!-- profile pic -->
+                <img
+                  src="../src/img/profile pic.png"
+                  alt="profile photo"
+                  class="h-[129px] w-[129px] rounded-full border border-[#F0F1F4]"
+                />
+                <!-- name -->
+                <p class="font-semibold text-base">علیرضا عسکری</p>
+              </div>
+            </div>
+            <!-- menu links -->
+            <div class="flex flex-col w-full mt-[37px]">
+              <!-- my ads -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/My ads red outline menu icon.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">آگهی های من</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+              <!-- last seens -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/last seen red outline mobile menu.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">آخرین بازدید ها</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+              <!-- my payments -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/payment red outline menu icon.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">پرداخت های من</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+              <!-- Business registration -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/store red outline menu icon.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">ثبت کسب و کار</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+              <!-- saved post -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/saved red outline menu icon.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">ذخیره ها</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+              <!-- Terms and Conditions -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/Terms red outline menu icon.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">قوانین و مقررات</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+              <!-- About the application -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/Exclamation mark red outline menu icon.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">درباره اپلیکیشن</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+              <!-- contact us -->
+              <div
+                class="flex flex-row-reverse justify-between px-[28px] py-[11px] border-b border-[#EEF0F3] w-full cursor-pointer"
+              >
+                <div class="flex flex-row-reverse gap-3 w-full">
+                  <img
+                    src="../src/img/icons/Exclamation mark red outline menu icon.svg"
+                    alt=""
+                    class="h-[24px] w-[24px]"
+                  />
+                  <p class="font-medium text-base">تماس با ما</p>
+                </div>
+                <img src="../src/img/icons/Arrow left.svg" alt="" />
+              </div>
+            </div>
+            <!-- Sign out of the account -->
+            <div
+              class="text-center font-bold text-lg w-full cursor-pointer mt-[60px]"
+            >
+              خروج از حساب
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu naz -->
+      <div
+        class="fixed bottom-0 left-0 w-full bg-white rounded-[24px] px-[49px] py-[14px] md:hidden"
+      >
+        <div class="flex justify-between">
+          <div
+            class="flex flex-col text-center gap-1 items-center shrink-0 cursor-pointer"
+          >
+            <img
+              src="../src/img/icons/user mobile nav menu gray.svg"
+              alt=""
+              class="h-[24px] w-[24px]"
+            />
+            <p class="text-[9px] font-semibold text-[#A1A1A1]">پروفایل</p>
+          </div>
+          <div
+            class="flex flex-col text-center gap-1 items-center shrink-0 cursor-pointer"
+          >
+            <img
+              src="../src/img/icons/bookmark gray.svg"
+              alt=""
+              class="h-[24px] w-[24px]"
+            />
+            <p class="text-[9px] font-semibold text-[#A1A1A1]">علاقمندی ها</p>
+          </div>
+          <div
+            class="relative flex flex-col text-center gap-1 items-center shrink-0 cursor-pointer justify-end"
+          >
+            <div
+              class="absolute bg-[#C60000] rounded-2xl flex justify-center items-center cursor-pointer h-[56px] w-[56px] top-[-40px]"
+            >
+              <img
+                class="h-[23px] w-[23px]"
+                src="../src/img/icons/white pluse modile menu nav.svg"
+                alt=""
+              />
+            </div>
+            <p class="text-[9px] font-semibold text-[#A1A1A1]">ثبت آگهی</p>
+          </div>
+          <div
+            class="flex flex-col text-center gap-1 items-center shrink-0 cursor-pointer"
+          >
+            <img
+              src="../src/img/icons/iCon Set mobile nav menu gray.svg"
+              alt=""
+              class="h-[24px] w-[24px]"
+            />
+            <p class="text-[9px] font-semibold text-[#A1A1A1]">دسته بندی</p>
+          </div>
+          <div
+            class="flex flex-col text-center gap-1 items-center shrink-0 cursor-pointer"
+          >
+            <img
+              src="../src/img/icons/logo mobile menu.svg"
+              alt=""
+              class="h-[24px] w-[24px]"
+            />
+            <p class="text-[9px] font-semibold text-[#C60000]">خانه</p>
+          </div>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>
